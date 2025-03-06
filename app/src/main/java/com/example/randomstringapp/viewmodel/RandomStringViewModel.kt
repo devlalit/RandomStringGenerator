@@ -1,4 +1,4 @@
-package com.example.randomstringapp
+package com.example.randomstringapp.viewmodel
 
 import android.app.Application
 import android.content.ContentResolver
@@ -8,6 +8,7 @@ import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.example.randomstringapp.model.RandomStringItem
 import dagger.hilt.android.lifecycle.HiltViewModel
 import org.json.JSONObject
 import java.text.SimpleDateFormat
