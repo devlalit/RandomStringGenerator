@@ -29,6 +29,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+
 import com.example.randomstringapp.model.RandomStringItem
 import com.example.randomstringapp.viewmodel.RandomStringViewModel
 import dagger.hilt.android.AndroidEntryPoint
@@ -50,6 +51,8 @@ fun RandomStringItemView(item: RandomStringItem, onDelete: () -> Unit) {
     Card(modifier = Modifier.fillMaxWidth().padding(8.dp)) {
         Column(modifier = Modifier.padding(16.dp)) {
             Text("Generated String: ${item.value}")
+
+            Text("Generated String Test: ${item.value}")
             Spacer(modifier = Modifier.height(3.dp))
             Text("Length: ${item.length}")
             Spacer(modifier = Modifier.height(3.dp))
